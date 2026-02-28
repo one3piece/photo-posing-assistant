@@ -1,13 +1,12 @@
 "use client";
 
-const WAITLIST_URL = "#"; // Replace with Tally.so or real waitlist link
+// 把下面的链接换成你在 Tally.so 创建的表单链接 (https://tally.so/r/xxxxxx)
+const WAITLIST_URL = "https://tally.so/r/xxxxxx";
 
 export default function LandingPage() {
   function handleWaitlist() {
-    if (typeof window !== "undefined" && WAITLIST_URL !== "#") {
+    if (typeof window !== "undefined") {
       window.open(WAITLIST_URL, "_blank");
-    } else {
-      window.alert("Waitlist joined! We'll be in touch.");
     }
   }
 
