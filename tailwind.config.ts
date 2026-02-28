@@ -11,6 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "cyber-blue": "#00d4ff",
+        "cyber-emerald": "#00ff88",
+      },
+      backgroundImage: {
+        "gradient-neon": "linear-gradient(135deg, #00d4ff 0%, #00ff88 100%)",
+      },
+      boxShadow: {
+        "glow-emerald": "0 0 30px rgba(0, 255, 136, 0.4)",
+        "glow-blue": "0 0 30px rgba(0, 212, 255, 0.4)",
       },
       safe: {
         top: "env(safe-area-inset-top)",

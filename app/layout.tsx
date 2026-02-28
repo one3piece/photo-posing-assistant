@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-[var(--background)]">
-      <body className="min-h-screen overflow-hidden antialiased">
+      <body className="min-h-screen antialiased">
         {children}
       </body>
     </html>

@@ -45,6 +45,7 @@ export function checkTemplateAlignment(
   return isAligned(landmarks, refs, mirror);
 }
 
+/** Minimalist fashion silhouettes: smooth contour line-art (path-only, no stick figures) */
 export const POSE_TEMPLATES: PoseTemplate[] = [
   {
     id: "casual-standing",
@@ -57,15 +58,13 @@ export const POSE_TEMPLATES: PoseTemplate[] = [
       { index: 24, x: 0.58, y: 0.58 },
     ],
     svg: `
-      <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-        <circle cx="50" cy="18" r="10"/>
-        <line x1="50" y1="28" x2="50" y2="70"/>
-        <line x1="50" y1="48" x2="25" y2="65"/>
-        <line x1="50" y1="48" x2="75" y2="65"/>
-        <line x1="50" y1="70" x2="35" y2="120"/>
-        <line x1="50" y1="70" x2="65" y2="120"/>
-        <line x1="35" y1="120" x2="30" y2="195"/>
-        <line x1="65" y1="120" x2="70" y2="195"/>
+      <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 50 10 Q 58 6 62 14 Q 64 22 60 28 Q 56 32 50 32 Q 44 32 40 28 Q 36 22 38 14 Q 42 6 50 10" />
+        <path d="M 50 32 C 50 40 50 52 50 62 C 49 78 48 94 48 108" />
+        <path d="M 50 42 C 36 44 26 56 24 72 C 22 86 26 98 32 106" />
+        <path d="M 50 42 C 64 44 74 56 76 72 C 78 86 74 98 68 106" />
+        <path d="M 48 108 C 40 112 32 132 28 162 C 26 184 28 198 30 200" />
+        <path d="M 50 108 C 58 112 66 132 70 162 C 72 184 70 198 68 200" />
       </svg>
     `,
   },
@@ -80,16 +79,13 @@ export const POSE_TEMPLATES: PoseTemplate[] = [
       { index: 24, x: 0.58, y: 0.56 },
     ],
     svg: `
-      <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-        <circle cx="50" cy="18" r="10"/>
-        <line x1="50" y1="28" x2="48" y2="72"/>
-        <line x1="48" y1="42" x2="20" y2="55"/>
-        <line x1="48" y1="42" x2="75" y2="52"/>
-        <path d="M 75 52 L 78 68 Q 72 72 65 70" />
-        <line x1="48" y1="72" x2="38" y2="118"/>
-        <line x1="48" y1="72" x2="62" y2="118"/>
-        <line x1="38" y1="118" x2="32" y2="195"/>
-        <line x1="62" y1="118" x2="68" y2="195"/>
+      <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 50 10 Q 60 6 64 14 Q 66 22 62 28 Q 56 32 50 30 Q 44 30 40 26 Q 38 20 40 14 Q 44 8 50 10" />
+        <path d="M 50 30 C 52 38 50 52 50 62 C 48 80 48 98 50 108" />
+        <path d="M 50 38 C 36 34 22 42 18 56 C 14 68 18 80 26 88" />
+        <path d="M 50 42 C 66 40 80 52 84 66 C 86 76 82 84 76 88 C 70 90 66 86 64 82" />
+        <path d="M 48 108 C 40 112 32 132 30 162 C 28 182 30 198 32 200" />
+        <path d="M 52 108 C 60 114 68 136 70 162 C 70 182 68 198 66 200" />
       </svg>
     `,
   },
@@ -104,15 +100,14 @@ export const POSE_TEMPLATES: PoseTemplate[] = [
       { index: 24, x: 0.4, y: 0.56 },
     ],
     svg: `
-      <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-        <ellipse cx="35" cy="20" rx="12" ry="10"/>
-        <path d="M 35 30 Q 30 50 32 75"/>
-        <line x1="32" y1="55" x2="15" y2="70"/>
-        <line x1="32" y1="55" x2="48" y2="68"/>
-        <line x1="32" y1="75" x2="25" y2="125"/>
-        <line x1="32" y1="75" x2="40" y2="125"/>
-        <line x1="25" y1="125" x2="22" y2="195"/>
-        <line x1="40" y1="125" x2="43" y2="195"/>
+      <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 30 20 Q 22 16 16 24 Q 12 32 14 40 Q 16 46 22 48 Q 30 50 38 46 Q 44 40 44 32 Q 44 24 38 20 Q 34 16 30 20" />
+        <path d="M 28 48 C 24 56 22 68 20 80 C 18 100 20 120 22 140 C 24 168 26 192 26 200" />
+        <path d="M 30 52 C 34 60 36 78 34 98 C 32 120 32 148 34 178 C 36 198 38 200 38 200" />
+        <path d="M 20 78 C 12 82 8 92 10 102" />
+        <path d="M 30 56 C 40 60 48 72 50 84" />
+        <path d="M 22 140 C 16 144 12 164 10 190 C 10 200 12 200 14 200" />
+        <path d="M 34 140 C 40 144 44 164 46 190 C 48 200 46 200 44 200" />
       </svg>
     `,
   },
