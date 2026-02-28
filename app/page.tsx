@@ -1,7 +1,7 @@
 "use client";
 
 // 把下面的链接换成你在 Tally.so 创建的表单链接 (https://tally.so/r/xxxxxx)
-const WAITLIST_URL = "https://tally.so/r/xxxxxx";
+const WAITLIST_URL = "https://tally.so/r/b5l806";
 
 export default function LandingPage() {
   function handleWaitlist() {
