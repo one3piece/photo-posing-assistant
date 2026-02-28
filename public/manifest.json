@@ -1,0 +1,10 @@
+{
+  "name": "Photo Posing Assistant",
+  "short_name": "Pose Assistant",
+  "description": "Pose with confidence — visual guides and AI feedback for the perfect shot.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait"
+}
